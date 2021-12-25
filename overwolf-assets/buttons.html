@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="../../css/general.css" />
+    <link rel="stylesheet" href="../../css/general.css" />
+    <link rel="stylesheet" href="../../css/header.css" />
+    <link rel="stylesheet" href="../../css/desktop.css" />
+    <link rel="stylesheet" href="../../css/modal.css" />
+    <title>Overwolf Sample App - Desktop page</title>
+</head>
+
+<body>
+
+    <a href='https://codepen.io/OverwolfDevs/pen/wvaoZWE'>codepen.io/overwolf-devs-buttons</a>
+    <div class="container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Default/Hover</th>
+                    <th>Disabeld</th>
+                    <th>Loading</th>
+                </tr>
+                <tbody>
+                    <tr>
+                        <td>
+                            <button class="button-style">Primary</button>
+                        </td>
+                        <td>
+                            <button class="button-style" disabled>Primary</button>
+                        </td>
+                        <td>
+                            <button class="button-style loading" id="submit-button"><!-- add class loading to see loading state -->
+                                    <div class="loader">
+                                        <svg class="window-controls-icon"><use
+                                                href="#loading"></use></svg>
+                                    </div>
+                                    <span class="loader-button-text">Primary</span>
+                                </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <button class="button-style secondary">Secondary</button>
+                        </td>
+                        <td>
+                            <button class="button-style secondary" disabled>Secondary</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <button class="button-style
+                                    secondary-in-tooltip">Secondary
+                                    in tooltip</button>
+                        </td>
+                        <td>
+                            <button class="button-style
+                                    secondary-in-tooltip" disabled>Secondary in
+                                    tooltip</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <button class="button-style third">Third</button>
+                        </td>
+                        <td>
+                            <button class="button-style third" disabled>Third</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <button class="button-style third-in-tooltip">Third
+                                    in tooltip</button>
+                        </td>
+                        <td>
+                            <button class="button-style third-in-tooltip" disabled>Third in tooltip</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <button class="button-style primary-marketing">Primary
+                                    Marketing</button>
+                        </td>
+                        <td>
+                            <button class="button-style primary-marketing" disabled>Primary Marketing</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <button class="button-style
+                                    secondary-marketing">Secondary
+                                    Marketing</button>
+                        </td>
+                        <td>
+                            <button class="button-style secondary-marketing" disabled>Secondary Marketing</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <button class="button-style secondary">Subscribe</button>
+                        </td>
+                        <td>
+                            <button class="button-style secondary" disabled>Subscribe</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <button class="button-style secondary">Subscribe
+                                    <span class="price">$2.99/Month</span></button>
+                        </td>
+                        <td>
+                            <button class="button-style secondary" disabled>Subscribe
+                                    <span class="price">$2.99/Month</span></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <button class="button-style secondary
+                                    secondary-icon">
+                                    <svg class="button-style-icon"><use
+                                            href="#subscription"></use></svg>
+                                    Subscribed
+                                </button>
+                        </td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </thead>
+        </table>
+    </div>
+
+    <h2>Control Buttons</h2>
+
+    <div class="container">
+
+        <button class="go-back-window window-button-style">
+                <svg class="window-controls-icon"><use href="#window-back"></use></svg>
+            </button>
+        <button class="home-window window-button-style">
+                <svg class="window-controls-icon"><use href="#window-home"></use></svg>
+            </button>
+        <button class="settings-window window-button-style">
+                <svg class="window-controls-icon"><use href="#window-settings"></use></svg>
+            </button>
+        <button class="minimize-window window-button-style">
+                <svg class="window-controls-icon"><use href="#window-minimize"></use></svg>
+            </button>
+        <button class="close-window window-button-style">
+                <svg class="window-controls-icon"><use href="#window-close"></use></svg>
+            </button>
+
+    </div>
+
+
+
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+
+            <symbol id="loading" viewBox="0 0 20 20" fill="none">
+                <path d="M19 10C19 14.9706 14.9706 19 10 19C5.02944 19 1 14.9706
+                    1
+                    10C1 5.02944 5.02944 1 10 1" stroke="white" stroke-width="2"
+                    />
+                </symbol>
+
+                <symbol id="subscription" viewBox="0 0 24 24">
+                    <path d="M5.20465 18.6659C5.26968 18.8647 5.4628 19 5.6813
+                        19H18.3187C18.5372 19 18.7303 18.8647 18.7954
+                        18.6659L21.9765 8.94604C22.1012 8.56499 21.7074 8.21591
+                        21.3174 8.36176L16.04 10.3351C15.7932 10.4274 15.5138
+                        10.3198 15.4035 10.0901L12.4506 3.93899C12.269 3.56083
+                        11.7306 3.56084 11.5491 3.93901L8.59647 10.0901C8.48622
+                        10.3198 8.20675 10.4274 7.95997 10.3351L2.68259
+                        8.36176C2.29255 8.21591 1.89879 8.56499 2.0235
+                        8.94604L5.20465 18.6659Z" />
+                    </symbol>
+
+                    <!-- window controls icons 30px -->
+                    <symbol id="window-close" viewBox="0 0 30 30">
+                        <path d="M15.5941 15.0254L19.6535 10.8629C19.8515
+                            10.6599
+                            19.8515 10.3553 19.6535 10.1523C19.4554 9.94924
+                            19.1584
+                            9.94924 18.9604 10.1523L14.901 14.3147L10.8416
+                            10.1523C10.6436 9.94924 10.3465 9.94924 10.1485
+                            10.1523C9.95049 10.3553 9.95049 10.6599 10.1485
+                            10.8629L14.2079 15.0254L10.1485 19.1878C9.95049
+                            19.3909
+                            9.95049 19.6954 10.1485 19.8985C10.2475 20 10.3465
+                            20
+                            10.5446 20C10.7426 20 10.8416 20 10.9406 19.8985L15
+                            15.736L19.0594 19.8985C19.1584 20 19.2574 20 19.4554
+                            20C19.6535 20 19.7525 20 19.8515 19.8985C20.0495
+                            19.6954
+                            20.0495 19.3909 19.8515 19.1878L15.5941 15.0254Z" />
+                        </symbol>
+
+                        <symbol id="window-minimize" viewBox="0 0 30 30">
+                            <path d="M20 19H10V20H20V19Z" />
+                            </symbol>
+
+                            <symbol id="window-home" viewBox="0 0 30 30">
+                                <path d="M22.809 13.1L15.009 8L7.20902
+                                    13.1C7.00902
+                                    13.3 6.90902 13.6 7.10902 13.8C7.30902 14
+                                    7.60902 14.1 7.80902 13.9L10.009
+                                    12.4V21.4C10.009 21.7 10.209 21.9 10.509
+                                    21.9C10.809 21.9 11.009 21.7 11.009
+                                    21.4V11.7L15.009 9.1L19.009 11.7V21.4C19.009
+                                    21.7 19.209 21.9 19.509 21.9C19.809 21.9
+                                    20.009
+                                    21.7 20.009 21.4V12.4L22.209 13.9C22.309 14
+                                    22.409 14 22.509 14C22.709 14 22.809 13.9
+                                    22.909
+                                    13.8C23.109 13.5 23.009 13.2 22.809 13.1Z"
+                                    />
+                                </symbol>
+
+                                <symbol id="window-back" viewBox="0 0 30 30">
+                                    <path d="M20 15.0049H10.8L15.1 9.80846C15.3
+                                        9.60859 15.2 9.3088 15 9.10894C14.8
+                                        8.90908
+                                        14.5 9.00901 14.3 9.20887L9 15.5045L14.3
+                                        21.8001C14.4 21.9001 14.5 22 14.7
+                                        22C14.8 22
+                                        14.9 22 15 21.9001C15.2 21.7002 15.2
+                                        21.4004
+                                        15.1 21.2006L10.8 16.0042H20V15.0049Z"
+                                        />
+                                    </symbol>
+
+                                    <symbol id="window-settings" viewBox="0 0 30
+                                        30">
+                                        <path d="M22 16.3V13.7H19.8C19.7 13.3
+                                            19.5
+                                            12.9 19.3 12.5L20.9 10.9L19 9.1L17.4
+                                            10.7C17 10.5 16.6 10.3 16.2
+                                            10.2V8H13.6V10.2C13.2 10.3 12.8 10.5
+                                            12.4 10.7L11 9.1L9.1 11L10.7
+                                            12.6C10.5
+                                            13 10.3 13.4 10.2
+                                            13.8H8V16.4H10.2C10.3
+                                            16.8 10.5 17.2 10.7 17.6L9.1 19L10.9
+                                            20.8L12.5 19.2C12.9 19.4 13.3 19.6
+                                            13.7
+                                            19.7V22H16.3V19.8C16.7 19.7 17.1
+                                            19.5
+                                            17.5 19.3L19.1 20.9L20.9 19.1L19.3
+                                            17.5C19.5 17.1 19.7 16.7 19.8
+                                            16.3H22ZM15 17.8C13.5 17.8 12.2 16.6
+                                            12.2 15C12.2 13.5 13.4 12.2 15
+                                            12.2C16.6
+                                            12.2 17.8 13.4 17.8 15C17.8 16.5
+                                            16.5
+                                            17.8 15 17.8Z" />
+                                        </symbol>
+
+
+                                    </svg>
+</body>
+
+</html>
