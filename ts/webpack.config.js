@@ -13,25 +13,23 @@ module.exports = env => ({
     },
     devtool: 'inline-source-map',
     module: {
-        rules: [
-            {
-                test: /\.ts?$/,
-                use: 'ts-loader',
-                exclude: /node_modules/
-            }
-        ]
+        rules: [{
+            test: /\.ts?$/,
+            use: 'ts-loader',
+            exclude: /node_modules/
+        }]
     },
     resolve: {
         extensions: ['.ts', '.js']
     },
     output: {
-      path: path.resolve(__dirname, 'dist/'),
-      filename: 'js/[name].js'
+        path: path.resolve(__dirname, 'dist/'),
+        filename: 'js/[name].js'
     },
     plugins: [
         new CleanWebpackPlugin,
         new CopyPlugin({
-            patterns: [ { from: "public", to: "./" } ],
+            patterns: [{ from: "public", to: "./" }],
         }),
         new HtmlWebpackPlugin({
             template: './src/background/background.html',
